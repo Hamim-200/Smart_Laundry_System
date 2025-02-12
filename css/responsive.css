@@ -1,0 +1,81 @@
+@media screen and (max-width: 992px) {
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button {
+        color: white;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .nav_menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: white;
+        transition: left 0.2s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav_menu {
+        left: 0;
+    }
+
+    .navbar .nav_menu .nav_link {
+        color: #3b6790;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .nav_item {
+        margin-bottom: 20px;
+    }
+
+    .banner_section .section-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+    }
+
+    .banner_section .banner_image_wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    .banner_section .banner_details .subtitle {
+        max-width: 100%;
+    }
+
+    .banner_section .banner_details .description {
+        max-width: 100%;
+    }
+
+    .banner_section .banner_details .banner_btn {
+        justify-content: center;
+    }
+}

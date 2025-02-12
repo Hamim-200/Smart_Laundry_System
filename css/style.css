@@ -1,0 +1,168 @@
+/* Overall Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== NAVBAR STYLE ===== */
+header {
+    background: #FF9D23;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar .nav_logo .logo_text {
+    color: #3B6790;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#logo_text_style {
+    color: #DBDBDC;
+}
+
+.navbar .nav_menu .nav_link {
+    color: #3B6790;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 1.12rem;
+    transition: 0.3s ease;
+    font-weight: 700;
+}
+
+.navbar .nav_menu .nav_link:hover {
+    background: #3B6790;
+    color: #DBDBDC;
+}
+
+.navbar .nav_menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav_btn {
+    padding: 8px 20px;
+    font-size: 1.12rem;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    color: #3B6790;
+    border: 1px solid #3B6790;
+    background: #DBDBDC;
+}
+
+.nav_register_btn:hover {
+    background: #FF9D23;
+    color: #3B6790;
+}
+
+.nav_login_btn:hover {
+    color: #DBDBDC;
+    background: #3B6790;
+}
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
+
+/* ===== BANNER STYLE ===== */
+.banner_section {
+    min-height: 100vh;
+    background: #efb036;
+}
+
+.banner_welcome_text {
+    background-color: #1f3951;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.banner_section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    justify-content: space-between;
+}
+
+.banner_section .banner_details .title {
+    font-size: 2.5rem;
+    color: #dbdbdc;
+    font-family: "Sour Gummy", serif;
+}
+
+.banner_section .banner_details .subtitle {
+    font-size: 1.75rem;
+    color: #3b6790;
+    margin-top: 8px;
+    max-width: 70%;
+    font-weight: 600;
+}
+
+.banner_section .banner_details .description {
+    max-width: 70%;
+    margin: 15px 0 40px;
+    font-size: 1.12rem;
+    color: #1f3951;
+}
+
+.banner_section .banner_image {
+    max-width: 500px;
+    margin-right: 30px;
+    height: 350px;
+    width: 350px;
+}
+
+.banner_btn {
+    display: flex;
+    gap: 25px;
+}
+
+.banner_book_btn:hover {
+    background: #1f3951;
+    color: #dbdbdc;
+}
+
+.banner_call_btn {
+    background: #1f3951;
+    color: #dbdbdc;
+}
+
+.banner_call_btn:hover {
+    color: #1f3951;
+    background: #dbdbdc;
+}
