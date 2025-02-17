@@ -172,32 +172,32 @@ header .navbar {
 .why_us_section {
     padding: 120px 0;
     background-color: #f6c94a;
-  }
+}
 
-  .why_us_section .section-content {
+.why_us_section .section-content {
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
-  .why_us_section .why_us_image_wrapper .why_us_image {
+.why_us_section .why_us_image_wrapper .why_us_image {
     width: 600px;
     height: 400px;
     object-fit: cover;
     border-radius: .5rem;
     border: 0.5rem solid #dbdbdc;
-  }
+}
 
-  .section-title {
+.section-title {
     color: #1f3951;
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
     font-size: 2rem;
-  }
+}
 
-  .section-title::after {
+.section-title::after {
     content: "";
     width: 80px;
     height: 5px;
@@ -205,33 +205,33 @@ header .navbar {
     margin: 10px auto 0;
     border-radius: 8px;
     background: #3b6790;
-  }
+}
 
-  .why_us_section .why_us_details .section-title {
+.why_us_section .why_us_details .section-title {
     padding: 0;
-  }
+}
 
-  .why_us_section .why_us_details {
+.why_us_section .why_us_details {
     max-width: 50%;
-  }
+}
 
-  .why_us_section .why_us_details .text {
+.why_us_section .why_us_details .text {
     line-height: 30px;
     margin: 50px 0 30px;
     text-align: left;
     font-size: 1.12rem;
     list-style: none;
     padding: 0;
-  }
+}
 
-  .why_us_section .why_us_details .text li {
+.why_us_section .why_us_details .text li {
     position: relative;
     padding-left: 35px;
     line-height: 1.5;
     font-size: 1.25rem;
-  }
+}
 
-  .why_us_section .why_us_details .text .icon {
+.why_us_section .why_us_details .text .icon {
     position: absolute;
     left: 0;
     top: 50%;
@@ -239,4 +239,135 @@ header .navbar {
     font-size: 1.2rem;
     margin-right: 10px;
     color: #1f3951;
+}
+
+/* ===== SERVICES SECTION STYLE ===== */
+
+.service_section {
+    background: #efb036;
+    padding: 40px 20px;
   }
+
+
+  .service_section .service_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .service_section .service_list .service_item {
+    background: #dbdbdc;
+    border: 2px solid #1f3951;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 20px);
+    transition: transform 0.3s;
+  }
+
+  .service_section .service_list .service_item:hover {
+    transform: translateY(-8px);
+  }
+
+  .service_section .service_list .service_image {
+    max-width: 30%;
+    margin-bottom: 15px;
+  }
+
+  .service_section .service_list .name {
+    font-size: 1.5rem;
+    color: #3b6790;
+    margin: 7px 0;
+    font-weight: 600;
+  }
+
+  .service_section .service_list .text {
+    margin: 8px 0 20px;
+    font-size: 1rem;
+    color: #1f3951;
+  }
+
+  .service_section .service_list .menu_button:hover {
+    background: #1f3951;
+    color: #dbdbdc;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== FOOTER SECTION STYLE ===== */
+.footer {
+    padding: 120px 50px 0;
+    background: #111;
+    text-align: center;
+}
+
+.footer .footer_box_container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer .box {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer .box h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #efb036;
+    text-transform: uppercase;
+}
+
+.footer .box a {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: #dbdbdc;
+}
+
+.footer .box a i {
+    padding-right: .5rem;
+    color: #1f3951;
+}
+
+#location {
+    padding-right: .5rem;
+    color: red;
+}
+
+.footer .box a:hover i {
+    padding-right: 1.5rem;
+    color: #fff;
+}
+
+.footer .credit_part {
+    text-align: center;
+    border-top: .1rem solid #222;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer .credit_part span {
+    color: #efb036;
+    font-family: "Sour Gummy", serif;
+}

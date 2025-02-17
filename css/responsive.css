@@ -82,9 +82,29 @@
         flex-direction: column-reverse;
         gap: 70px;
     }
-    .why_us_section .why_us_image_wrapper .why_us_image{
+
+    .why_us_section .why_us_image_wrapper .why_us_image {
         max-width: 400px;
         margin: 0px 20px;
     }
 
+    .service_section .service_list .service_item {
+        width: calc(50% - 20px);
+    }
+
+    .service_section .service_list .service_image {
+        max-width: 50%;
+    }
+
+    .service_section .service_list .name {
+        font-size: 1.25rem;
+    }
+
+    .service_section .service_list .text {
+        font-size: 0.9rem;
+    }
+
+    .service_section .service_list .nav_btn {
+        padding: 8px 12px;
+    }
 }
