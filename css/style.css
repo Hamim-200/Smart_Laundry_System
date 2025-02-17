@@ -246,17 +246,17 @@ header .navbar {
 .service_section {
     background: #efb036;
     padding: 40px 20px;
-  }
+}
 
 
-  .service_section .service_list {
+.service_section .service_list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-  }
+}
 
-  .service_section .service_list .service_item {
+.service_section .service_list .service_item {
     background: #dbdbdc;
     border: 2px solid #1f3951;
     border-radius: 10px;
@@ -265,37 +265,109 @@ header .navbar {
     text-align: center;
     width: calc(25% - 20px);
     transition: transform 0.3s;
-  }
+}
 
-  .service_section .service_list .service_item:hover {
+.service_section .service_list .service_item:hover {
     transform: translateY(-8px);
-  }
+}
 
-  .service_section .service_list .service_image {
+.service_section .service_list .service_image {
     max-width: 30%;
     margin-bottom: 15px;
-  }
+}
 
-  .service_section .service_list .name {
+.service_section .service_list .name {
     font-size: 1.5rem;
     color: #3b6790;
     margin: 7px 0;
     font-weight: 600;
-  }
+}
 
-  .service_section .service_list .text {
+.service_section .service_list .text {
     margin: 8px 0 20px;
     font-size: 1rem;
     color: #1f3951;
-  }
+}
 
-  .service_section .service_list .menu_button:hover {
+.service_section .service_list .menu_button:hover {
     background: #1f3951;
     color: #dbdbdc;
-  }
+}
 
+/* ===== STEPS SECTION STYLE ===== */
+.steps_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin: 0;
+    background-color: #f6c94a;
+}
 
+.container {
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
 
+.steps {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.step {
+    width: 22%;
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+}
+
+.step .circle {
+    width: 80px;
+    height: 80px;
+    border: 4px solid #1f3951;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    background-color: white;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.step .circle img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.step .circle:hover img {
+    transform: scale(1.1);
+}
+
+.step .circle:hover {
+    transform: scale(1.05);
+}
+
+.step:nth-child(even) .circle {
+    margin-top: 60px;
+}
+
+.step_title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #3b6790;
+}
+
+.step-text {
+    color: #1f3951;
+    font-size: 0.9rem;
+}
 
 
 

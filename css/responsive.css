@@ -107,4 +107,13 @@
     .service_section .service_list .nav_btn {
         padding: 8px 12px;
     }
+
+    .step {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    #steps_btn {
+        display: inline-block;
+    }
 }
