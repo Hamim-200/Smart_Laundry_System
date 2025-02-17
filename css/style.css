@@ -166,3 +166,77 @@ header .navbar {
     color: #1f3951;
     background: #dbdbdc;
 }
+
+/* ===== WHY US SECTION STYLE ===== */
+
+.why_us_section {
+    padding: 120px 0;
+    background-color: #f6c94a;
+  }
+
+  .why_us_section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .why_us_section .why_us_image_wrapper .why_us_image {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: .5rem;
+    border: 0.5rem solid #dbdbdc;
+  }
+
+  .section-title {
+    color: #1f3951;
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 8px;
+    background: #3b6790;
+  }
+
+  .why_us_section .why_us_details .section-title {
+    padding: 0;
+  }
+
+  .why_us_section .why_us_details {
+    max-width: 50%;
+  }
+
+  .why_us_section .why_us_details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: left;
+    font-size: 1.12rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .why_us_section .why_us_details .text li {
+    position: relative;
+    padding-left: 35px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+  }
+
+  .why_us_section .why_us_details .text .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #1f3951;
+  }

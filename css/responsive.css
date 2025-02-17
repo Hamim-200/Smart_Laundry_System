@@ -65,17 +65,26 @@
     .banner_section .banner_image_wrapper {
         max-width: 270px;
         margin-right: 0;
+        margin-top: 50px;
     }
 
-    .banner_section .banner_details .subtitle {
-        max-width: 100%;
-    }
-
-    .banner_section .banner_details .description {
+    .banner_section .banner_details :is(.description, .subtitle, .banner_details),
+    .why_us_section,
+    .why_us_details {
         max-width: 100%;
     }
 
     .banner_section .banner_details .banner_btn {
         justify-content: center;
     }
+
+    .why_us_section .section-content {
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+    .why_us_section .why_us_image_wrapper .why_us_image{
+        max-width: 400px;
+        margin: 0px 20px;
+    }
+
 }
