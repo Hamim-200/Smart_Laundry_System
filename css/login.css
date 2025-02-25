@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/images/login_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); 
+  z-index: 1; 
+}
+
+.main_container {
+  max-width: 400px;
+  width: 90%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  border-radius: 10px; 
+  padding: 2rem; 
+  position: relative;
+  z-index: 2; 
+}
+
+.form_section {
+  width: 100%;
+}
+.form_heading {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: center;
+    color:  white;
+    border-bottom: 2px solid gray;
+}
+.main_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 2.5rem 2.7rem;
+  box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #3B6790;
+  opacity: 0.9;
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #3B6790;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  background-color: #efb036; 
+  color: #3B6790;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.3s;
+  cursor: pointer; 
+}
+
+.submit-btn:hover {
+  background-color: #3B6790;
+  color: #DBDBDC;
+}
+
+.reg_section {
+  font-size: 1rem;
+  color: #3B6790; 
+  text-align: center;
+}
+
+.reg_section a {
+  text-decoration: none;
+  color: #FF9D23;
+}
