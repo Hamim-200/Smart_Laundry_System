@@ -96,7 +96,7 @@ header .navbar {
 
 /* ===== BANNER STYLE ===== */
 .banner_section {
-    min-height: 100vh;
+    max-height: 90vh;
     background: #efb036;
 }
 
@@ -168,7 +168,6 @@ header .navbar {
 }
 
 /* ===== WHY US SECTION STYLE ===== */
-
 .why_us_section {
     padding: 120px 0;
     background-color: #f6c94a;
@@ -242,12 +241,10 @@ header .navbar {
 }
 
 /* ===== SERVICES SECTION STYLE ===== */
-
 .service_section {
     background: #efb036;
     padding: 40px 20px;
 }
-
 
 .service_section .service_list {
     display: flex;
@@ -308,7 +305,8 @@ header .navbar {
     max-width: 1500px;
     text-align: center;
     padding: 5px;
-    
+    margin-bottom: 20px;
+
 }
 
 .steps {
@@ -370,17 +368,133 @@ header .navbar {
     font-size: 0.9rem;
 }
 
+/* ===== STATS SECTION STYLE ===== */
+.stats_section {
+    background-color: #efb036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+}
 
+.stats_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
 
+.stat_item {
+    flex: 1;
+}
 
+.stat_number {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
 
+.stat_text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3b6790;
+    margin-top: 5px;
+}
 
+.divider {
+    width: 1px;
+    height: 50px;
+    background-color: #ccc;
+}
 
+/* ===== REVIEW SECTION STYLE ===== */
+.reviews_section {
+    background-color: #f6c94a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
 
+.all_review {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
 
+.reviews_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 
+.review_card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s;
+}
 
+.review_card:hover {
+    transform: translateY(-5px);
+    border: 2px solid white;
+    box-shadow: 0 0 25px rgba(59, 103, 144, 0.7)
+}
 
+.review_text {
+    font-style: italic;
+    font-size: 1.20rem;
+    color: #ccc;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.reviewer p {
+    font-size: 0.75rem;
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.explore_reviews {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.explore_reviews:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
 
 /* ===== FOOTER SECTION STYLE ===== */
 .footer {
