@@ -1,0 +1,378 @@
+Admin Dashboard Styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 22%;
+    min-width: 200px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #343a40;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #343a40;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form input, form button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+table td a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    color: darkred;
+}
+
+/* Delete Button */
+a.delete-btn {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+a.delete-btn:hover {
+    background: darkred;
+}
+
+/* Container Layout */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Order Status */
+.status-pending { color: orange; font-weight: bold; }
+.status-completed { color: green; font-weight: bold; }
+.status-canceled { color: red; font-weight: bold; }
+
+.total-earnings {
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Manage Locations Specific Styles */
+
+/* Container for Manage Locations Page */
+.manage-locations-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Location Form */
+.manage-locations-container form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Table for Location List */
+.manage-locations-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-locations-container th,
+.manage-locations-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.manage-locations-container th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+.manage-locations-container tr:hover {
+    background: #f1f1f1;
+}
+
+/* Location Action Button (Delete, Update) */
+.manage-locations-container td a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.manage-locations-container td a:hover {
+    color: darkred;
+}
+
+.manage-locations-container td button {
+    background: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.manage-locations-container td button:hover {
+    background: #d9534f;
+}
+
+/* Update Location Form Styles (hidden by default) */
+#updateForm {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+}
+
+#updateForm input, #updateForm button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#updateForm button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#updateForm button:hover {
+    background: #0056b3;
+}
+
+#updateForm button.cancel {
+    background: #6c757d;
+}
+
+/* Responsive Design Adjustments for Manage Locations */
+@media (max-width: 768px) {
+    .manage-locations-container form {
+        width: 95%;
+    }
+
+    .manage-locations-container table {
+        font-size: 14px;
+    }
+
+    .manage-locations-container th, .manage-locations-container td {
+        padding: 8px;
+    }
+
+    /* Make Update and Delete Buttons Stack in small screens */
+    .manage-locations-container td button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .manage-locations-container td a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+}
