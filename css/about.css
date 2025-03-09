@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.section-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* ===== NAVBAR STYLE ===== */
+header {
+    background: #FF9D23;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar .nav_logo .logo_text {
+    color: #3B6790;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#logo_text_style {
+    color: #DBDBDC;
+}
+
+.navbar .nav_menu .nav_link {
+    color: #3B6790;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 1.12rem;
+    transition: 0.3s ease;
+    font-weight: 700;
+}
+
+.navbar .nav_menu .nav_link:hover ,#about-btn {
+    background: #3B6790;
+    color: #DBDBDC;
+}
+
+.navbar .nav_menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav_btn {
+    padding: 8px 20px;
+    font-size: 1.12rem;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    color: #3B6790;
+    border: 1px solid #3B6790;
+    background: #DBDBDC;
+}
+
+.nav_register_btn:hover {
+    background: #FF9D23;
+    color: #3B6790;
+}
+
+.nav_login_btn:hover {
+    color: #DBDBDC;
+    background: #3B6790;
+}
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
+/* About HEADING STYLE */
+.about-section {
+    background: #f8f9fa;
+    /* background: #d35400;; */
+    text-align: center;
+    padding: 150px 20px 40px;
+    min-height: 100vh;
+
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    color: #3B6790;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}

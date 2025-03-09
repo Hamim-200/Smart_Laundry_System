@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+
+    <!-- FONT - (GOOGLE FONTS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- ICONS (FONT AWESOME) -->
+    <script src="https://kit.fontawesome.com/1535749e06.js" crossorigin="anonymous"></script>
+
+    <!-- CSS ADDED -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- CSS FOR RESPONSIVE -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        .about-container {
+            place-items: center;
+            width: 100%;
+            min-height: 70vh;
+            display: grid;
+        }
+
+        .container {
+            width: 90%;
+            height: 100%;
+            max-width: 1170px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-gap: 60px;
+            padding: 35px 0;
+        }
+
+        .contentLeft,
+        .contentRight {
+            width: 100%;
+        }
+
+        .contentLeft .row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .contentLeft .row .imgWrapper {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contentLeft .row .imgWrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            user-select: none;
+            transition: 0.3s ease;
+        }
+
+        .contentLeft .row .imgWrapper:hover img {
+            transform: scale(1.5);
+        }
+
+        .contentLeft .row .imgWrapper:nth-child(odd) {
+            transform: translateY(-20px);
+        }
+
+        .contentLeft .row .imgWrapper:nth-child(even) {
+            transform: translateY(20px);
+        }
+
+        .contentRight .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .contentRight .content h4 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #d35400;
+        }
+
+        .contentRight .content p {
+            font-size: 16px;
+            color: #343434;
+            line-height: 28px;
+            padding-bottom: 10px;
+            text-align: start;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+            max-width: 1170px;
+            margin: auto;
+            padding: 80px 0;
+        }
+        .service-box {
+            display: flex;
+            align-items: flex-start;
+            width: 45%;
+            padding-top: 20px;
+        }
+        .icon {
+            font-size: 24px;
+            background: #ddd;
+            padding: 15px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .icon:hover {
+            background: #3B6790;
+            color:  #fff;
+          
+        }
+        .service-text h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #d35400;
+            font-weight: 500;
+
+        }
+        .service-text p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #343434;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .contentLeft .row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contentLeft .row .imgWrapper {
+                height: 150px;
+            }
+
+            .contentRight .content h4 {
+                font-size: 18px;
+            }
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-box {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+            .icon {
+                margin: 0 auto 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a class="nav_logo" href="#">
+                <h2 class="logo_text">
+                    <i class="fa-solid fa-shirt"></i> LAUND<span id="logo_text_style">R</span>RY
+                </h2>
+            </a>
+            <ul class="nav_menu">
+                <button class="fas fa-times" id="menu-close-button"></button>
+                <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#" class="nav_link" id="about-btn">About Us</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Services</a></li>
+                <li class="nav_item"><a href="#faq" class="nav_link">FAQ</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="./registration.html" class="nav_btn nav_register_btn"><i
+                            class="fa-solid fa-paperclip"></i> Register</a></li>
+                <li class="nav_item"><a href="./login.html" class="nav_btn nav_login_btn"><i
+                            class="fa-solid fa-user"></i> Login</a></li>
+            </ul>
+            <button class="fas fa-bars" id="menu-open-button"></button>
+        </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="section-content">
+            <h1>About Laundry</h1>
+        </div>
+        <div class="about-container">
+            <div class="container">
+                <div class="contentLeft">
+                    <div class="row">
+                        <div class="imgWrapper">
+                            <img src="./assets/images/about_img_1.jpg" alt="">
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="./assets/images/about_img_3.jpeg" alt="">
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="./assets/images/about_img_4.jpeg" alt="">
+                        </div>
+
+                        <div class="imgWrapper">
+                            <img src="./assets/images/about_img_2.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="contentRight">
+                    <div class="content">
+                        <h4>Who We Are</h4>
+                        <p>LAUNDRRY is your trusted online laundry service committed to simplifying your life by taking
+                            the hassle out of washing, cleaning, and ironing clothes. With convenient pickup and
+                            doorstep delivery through our dedicated riders, we bring professional laundry services right
+                            to your home.</p>
+                    </div>
+                    <div class="content">
+                        <h4>Our Mission</h4>
+                        <p>To provide seamless, efficient, and reliable laundry services that save our customers
+                            valuable time and ensure their garments look impeccable every time.</p>
+                    </div>
+                    <div class="content">
+                        <h4>Our Vision</h4>
+                        <p>To revolutionize laundry care with cutting-edge technology, personalized service, and
+                            sustainable practices, becoming the preferred online laundry solution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-content">
+            <h1>Our Core Values</h1>
+        </div>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="icon"><i class="fa-solid fa-ranking-star"></i></div>
+                <div class="service-text">
+                    <h3>Quality</h3>
+                    <p>We ensure top-notch laundry services with the highest standards in cleaning, care, and delivery.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="service-text">
+                    <h3>Integrity</h3>
+                    <p>We operate with honesty, transparency, and fairness in all customer interactions.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="service-text">
+                    <h3>Innovation</h3>
+                    <p>We embrace the latest technology and modern techniques to enhance our services and improve efficiency.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="service-text">
+                    <h3>Customer-Centric</h3>
+                    <p>Our customers are our top priority, and we tailor our services to meet their unique needs and expectations.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="service-text">
+                    <h3>Sustainability</h3>
+                    <p>We are committed to eco-friendly practices, using biodegradable detergents and energy-efficient processes.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon"><i class="fa-solid fa-repeat"></i></div>
+                <div class="service-text">
+                    <h3>Convenience</h3>
+                    <p>We offer seamless online booking, doorstep pickup, and timely delivery to make laundry hassle-free for our customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
