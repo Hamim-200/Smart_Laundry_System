@@ -62,7 +62,10 @@ header .navbar {
     background: #3B6790;
     color: #DBDBDC;
 }
-
+#home-btn{
+    background: #3B6790;
+    color: #DBDBDC;
+}
 .navbar .nav_menu {
     display: flex;
     gap: 10px;

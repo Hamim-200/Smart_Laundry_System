@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/contact_fav.svg" type="image/x-icon" />
+
+    <!-- FONT - (GOOGLE FONTS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- ICONS (FONT AWESOME) -->
+    <script src="https://kit.fontawesome.com/1535749e06.js" crossorigin="anonymous"></script>
+
+    <!-- CSS ADDED -->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- CSS FOR RESPONSIVE -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a class="nav_logo" href="./index.html">
+                <h2 class="logo_text">
+                    <i class="fa-solid fa-shirt"></i> LAUND<span id="logo_text_style">R</span>RY
+                </h2>
+            </a>
+            <ul class="nav_menu">
+                <button class="fas fa-times" id="menu-close-button"></button>
+                <li class="nav_item"><a href="./index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="./about.html" class="nav_link">About Us</a></li>
+                <li class="nav_item"><a href="./service.html" class="nav_link">Services</a></li>
+                <li class="nav_item"><a href="./faq.html" class="nav_link">FAQ</a></li>
+                <li class="nav_item"><a href="./contact.html" class="nav_link" id="contact-btn">Contact</a></li>
+                <li class="nav_item"><a href="./registration.html" class="nav_btn nav_register_btn"><i
+                            class="fa-solid fa-paperclip"></i> Register</a></li>
+                <li class="nav_item"><a href="./login.html" class="nav_btn nav_login_btn"><i
+                            class="fa-solid fa-user"></i> Login</a></li>
+            </ul>
+            <button class="fas fa-bars" id="menu-open-button"></button>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <div class="section-content">
+            <div class="container">
+                <div class="form">
+                    <div class="contact-info">
+                        <h3 class="title">Contact Us</h3>
+                        <p class="text">Get in touch with us! Whether you have questions, feedback, or inquiries, we're here to help. Reach out via email, phone, or our contact form, and we'll get back to you as soon as possible.</p>
+
+                        <div class="info">
+                            <div class="information">
+                                <i class="fa-solid fa-location-arrow icon"></i>
+                                <p>Uttara, Dhaka 1230</p>
+                            </div>
+
+                            <div class="information">
+                                <i class="fa-solid fa-at icon"></i>
+                                <p>laundry.service@gmail.com</p>
+                            </div>
+                            
+                            <div class="information">
+                                <i class="fa-solid fa-phone icon"></i>
+                                <p>017-0750-619</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <p>Find Us At</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" autocomplete="off">
+                            <h3 class="title">Your Message !!</h3>
+                            <div class="input-container">
+                                <input type="text" name="name" class="input" />
+                                <label for="">Name</label>
+                                <span>Name</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" name="email" class="input" />
+                                <label for="">Email</label>
+                                <span>Email</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="tel" name="phone" class="input" />
+                                <label for="">Phone</label>
+                                <span>Phone</span>
+                            </div>
+                            <div class="input-container textarea">
+                                <textarea name="message" class="input"></textarea>
+                                <label for="">Message</label>
+                                <span>Message</span>
+                            </div>
+                            <input type="submit" value="Send" class="btn" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/nav.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
