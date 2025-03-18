@@ -6,16 +6,19 @@
     list-style: none;
     text-decoration: none;
 }
+
 button {
     cursor: pointer;
     border: none;
     background: none;
 }
+
 .section-content {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 /* ===== NAVBAR STYLE ===== */
 header {
     background: #FF9D23;
@@ -54,7 +57,8 @@ header .navbar {
     background: #3B6790;
     color: #DBDBDC;
 }
-#service-btn{
+
+#service-btn {
     background: #3B6790;
     color: #DBDBDC;
 }
@@ -89,7 +93,7 @@ header .navbar {
     display: none;
 }
 
-/* FAQ HEADING STYLE */
+/* HEADER TEXTS */
 .welcome-section {
     background: #f8f9fa;
     text-align: center;
@@ -103,9 +107,430 @@ header .navbar {
     margin-bottom: 15px;
 }
 
-.welcome-section p {
+.services {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.service-box {
+    width: 30%;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.divider {
+    width: 1px;
+    background-color: #ddd;
+    height: 250px;
+}
+
+.icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #ff9900;
+}
+
+h3 {
+    font-size: 20px;
+    color: #3B6790;
+    margin-bottom: 8px;
+}
+
+p {
     font-size: 1.2rem;
+    font-weight: 300;
     color: #333;
+    max-width: 3500px;
+    margin: 0 auto 10px;
+    line-height: 1.25;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff9900;
+    padding: 5px 6px;
+    border-bottom: 2px solid #666;
+    transition: all 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+    color: #FFF;
+    background-color: #ff9900;
+    border-left: 1px solid #333;
+}
+
+
+/* SERVICE CATEGORY  */
+.service-category-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.categories {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.categories h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+}
+
+#category-list {
+    list-style: none;
+    padding: 0;
+}
+
+#category-list li {
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#category-list li:hover,
+#category-list li.active {
+    background: #3B6790;
+    color: white;
+}
+
+.service-description h2 {
+    margin: 0 0 10px;
+}
+
+.service-description {
+    flex: 2;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.call-to-action {
+    background: #ff9900;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.call-to-action .phone-number {
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    color: #3B6790;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/* PRIZE SECTION */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.pricing-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    border-color: #3B6790;
+}
+
+.featured {
+    border: 2px solid #3B6790;
+    position: relative;
+}
+
+.badge {
+    background: green;
+    color: white;
+    font-size: 14px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    transform: translate(50%, -50%);
+}
+
+h2 {
+    font-size: 24px;
+    color: #3B6790;
+}
+
+.pricing-card p {
+    font-size: 18px;
+}
+
+h2 span {
+    font-size: 16px;
+    color: gray;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+}
+
+.btn {
+    background: transparent;
+    color: #3B6790;
+    border: 2px solid #3B6790;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #3B6790;
+    color: white;
+}
+
+.btn-primary {
+    background: #3B6790;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2b4e6b;
+}
+
+/* MORE PRIZING SECTION */
+.more-pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.more-pricing {
+    width: 48%;
+    background: #fff;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
+.more-pricing h3 {
+    color: #3B6790;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3B6790;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.more-pricing-list {
+    list-style: none;
+    padding: 0;
+}
+
+.more-pricing-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.more-pricing-list li:last-child {
+    border-bottom: none;
+}
+
+.more-pricing-list li i {
+    color: #3B6790;
+    margin-right: 10px;
+}
+
+.check-icon {
+    color: green;
+}
+
+.cross-icon {
+    color: red;
+}
+
+
+.contact-info {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    font-size: 20px;
+    color: gray;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-box {
+        width: 45%;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .service-category-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .categories,
+    .service-description,
+    .call-to-action {
+        width: 45%;
+    }
+
+    .more-pricing {
+        width: 48%;
+        padding: 12px;
+    }
+
+    .more-pricing h3 {
+        font-size: 17px;
+    }
+
+    .more-pricing-list li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-box {
+        width: 100%;
+    }
+
+    .service-category-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .categories,
+    .service-description,
+    .call-to-action {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-description {
+        text-align: left;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 90%;
+    }
+
+    .more-pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-pricing {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .more-pricing h3 {
+        font-size: 16px;
+    }
+
+    .more-pricing-list li {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+}

@@ -14,9 +14,9 @@
 </nav>
 
 <style>
-    .navbar {
+   
+     .navbar {
         background: #007bff;
-        ;
         padding: 15px;
         display: flex;
         justify-content: space-between;
@@ -34,7 +34,6 @@
     
     .navbar a:hover {
         background: #343a40;
-        ;
         border-radius: 5px;
     }
     
